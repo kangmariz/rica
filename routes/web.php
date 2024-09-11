@@ -3,11 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Info.name');
+    return view('Pages.home');
 });
-Route::get('/age', function () {
-    return view('Info.age');
+Route::get('/profile', function () {
+    return view('Pages.profile');
 });
-Route::get('/contact', function () {
-    return view('Info.contact');
-});
+
